@@ -142,3 +142,36 @@ Setelah mengklik "Tentang kami"
 Hasil:
 
 ![alt text](image-14.png)
+
+### TUGAS PRAKTIKUM
+
+1. Buat halaman baru dengan menggunakan Static Site Generation (SSG) yang menampilkan daftar
+pengguna dari API https://jsonplaceholder.typicode.com/users.
+
+Jawab:
+
+Code:
+
+![alt text](image-15.png)
+
+Hasil:
+
+![alt text](image-16.png)
+
+2. Implementasikan Dynamic Routes untuk menampilkan detail pengguna berdasarkan ID
+
+Jawab:
+
+code:
+
+![alt text](image-17.png)
+
+Hasil:
+
+![alt text](image-18.png)
+
+3. Buat API route yang mengembalikan data cuaca dari API eksternal (misalnya,
+OpenWeatherMap) dan tampilkan data tersebut di halaman front-end.
+
+Jawab:
+
