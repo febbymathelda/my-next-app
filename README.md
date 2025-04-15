@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -16,25 +16,162 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Laporan Praktikum
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+|  | Pemrograman Berbasis Framework 2025 |
+|--|--|
+| NIM |  2241720067|
+| Nama |  Febby Mathelda Silvya Mooy |
+| Kelas | TI - 3D |
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### PERSIAPAN
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+![alt text](image.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Hasil Browser:
 
-## Deploy on Vercel
+![alt text](image-1.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### B. Membuat Halaman dengan Server-Side Rendering (SSR)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Buka file pages/index.tsx di text editor Anda
+
+2. Ganti kode di dalamnya dengan kode berikut untuk membuat halaman sederhana:
+
+Hasil:
+
+![alt text](image-2.png)
+
+3. Simpan file dan lihat perubahan di browser. Anda akan melihat halaman utama dengan teks
+"Selamat Datang di Website Saya!".
+
+Hasil:
+
+![alt text](image-3.png)
+
+### C. Menggunakan Static Site Generation (SSG)
+
+1. Buat file baru di direktori pages dengan nama blog.js.
+
+2. Tambahkan kode berikut untuk membuat halaman blog dengan SSG:
+
+Hasil:
+
+![alt text](image-4.png)
+
+3. Simpan file dan buka http://localhost:3000/blog di browser. Anda akan melihat daftar post yang
+diambil dari API eksternal.
+
+Hasil:
+
+![alt text](image-5.png)
+
+### D. Menggunakan Dynamic Routes
+
+1. Buat direktori baru di pages dengan nama blog.
+
+2. Buat direktori baru di pages dengan nama blog.
+
+3. Tambahkan kode berikut untuk membuat halaman dinamis berdasarkan slug
+
+Hasil:
+
+![alt text](image-6.png)
+
+4. Simpan file dan buka http://localhost:3000/blog/contoh-post di browser. Anda akan melihat
+halaman yang menampilkan slug dari URL.
+
+Hasil:
+
+![alt text](image-7.png)
+
+### E. Menggunakan API Routes
+
+1. Pastikan terdapat direktori di pages dengan nama api.
+
+2. Buat file di dalam direktori api dengan nama products.js.
+
+3. Tambahkan kode berikut untuk membuat API route yang mengembalikan daftar produk:
+
+Hasil:
+
+![alt text](image-8.png)
+
+4. Buat file baru di pages dengan nama products.js untuk menampilkan daftar produk:
+
+Hasil:
+
+![alt text](image-9.png)
+
+5. Simpan file dan buka http://localhost:3000/products di browser. Anda akan melihat daftar
+produk yang diambil dari API route.
+
+Hasil:
+
+![alt text](image-10.png)
+
+### F. Menggunakan Link Component
+
+1. Buka file pages/index.tsx dan tambahkan modif dengan kode berikut untuk membuat link ke
+halaman lain:
+
+Hasil:
+
+![alt text](image-11.png)
+
+2. Buat file baru di pages dengan nama about.js untuk halaman "Tentang Kami":\
+
+Hasil:
+
+![alt text](image-12.png)
+
+3. Simpan file dan buka http://localhost:3000 di browser. Klik link "Tentang Kami" untuk navigasi
+ke halaman tentang.
+
+Hasil:
+
+![alt text](image-13.png)
+
+Setelah mengklik "Tentang kami"
+
+Hasil:
+
+![alt text](image-14.png)
+
+### TUGAS PRAKTIKUM
+
+1. Buat halaman baru dengan menggunakan Static Site Generation (SSG) yang menampilkan daftar
+pengguna dari API https://jsonplaceholder.typicode.com/users.
+
+Jawab:
+
+Code:
+
+![alt text](image-15.png)
+
+Hasil:
+
+![alt text](image-16.png)
+
+2. Implementasikan Dynamic Routes untuk menampilkan detail pengguna berdasarkan ID
+
+Jawab:
+
+code:
+
+![alt text](image-17.png)
+
+Hasil:
+
+![alt text](image-18.png)
+
+3. Buat API route yang mengembalikan data cuaca dari API eksternal (misalnya,
+OpenWeatherMap) dan tampilkan data tersebut di halaman front-end.
+
+Jawab:
+
